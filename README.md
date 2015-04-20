@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/katebeavis/takeaway-challenge/badges/gpa.svg)](https://codeclimate.com/github/katebeavis/takeaway-challenge)
 Takeaway Challenge
 ==================
 
