@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'Order'
+require 'order'
 
 describe Order do
   subject { described_class.new(maximum_order: 10) }
