@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'rspec'
-gem 'twilio-ruby'
-gem 'timecop'
+group :development do
+  gem 'twilio-ruby'
+end
+
+group :test do
+  gem 'codeclimate-test-reporter', require: nil
+  gem 'rspec'
+  gem 'timecop'
+end
