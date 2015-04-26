@@ -24,7 +24,7 @@ class Checkout
     @client.account.messages.create({
                                       :from => '+441412804334',
                                       :to => '+447935294331',
-                                      :body => 'Thanks for your order. Your food will be with you before #{delivery_time.strftime("%I:%M%p")}'
+                                      :body => "Thanks for your order. Your food will be with you before #{delivery_time.strftime("%I:%M%p")}"
                                     })
   end
 end
