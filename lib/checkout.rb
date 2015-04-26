@@ -3,7 +3,7 @@ require 'twilio-ruby'
 
 class Checkout
   def pay_money(order, money_paid)
-    if money_paid != order.order_total
+    if !money_paid || money_paid != order.order_total
       fail 'You have entered an incorrect amount, please reenter'
     else
       send_message
