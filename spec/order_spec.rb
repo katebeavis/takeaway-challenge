@@ -26,4 +26,9 @@ describe Order do
     subject.add_dish(coco_pops, 3)
     expect(subject.order_total).to eq(17.60)
   end
+
+  it 'shows a list of all orders' do
+    subject.add_dish(frosties, 2)
+    expect(subject.display_current_order).to include(frosties)
+  end
 end
