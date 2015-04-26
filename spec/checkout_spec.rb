@@ -4,6 +4,7 @@ require 'timecop'
 
 describe Checkout do
   subject { described_class.new }
+  let(:checkout2) { double :checkout, pay_money: 2 }
   let(:order1) { double :order, order_total: 2.50 }
 
   before do
@@ -19,6 +20,6 @@ describe Checkout do
   end
 
   it 'tells the customer a text has been sent if the money matches the total' do
-    subject.pay_money(order1, 2.50)
+    checkout2.pay_money(order1, 2.50)
   end
 end
