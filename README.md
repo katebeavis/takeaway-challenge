@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/katebeavis/takeaway-challenge/badges/gpa.svg)](https://codeclimate.com/github/katebeavis/takeaway-challenge)
+[![Code Climate](https://codeclimate.com/github/katebeavis/takeaway-challenge/badges/gpa.svg)](https://codeclimate.com/github/katebeavis/takeaway-challenge) [![Test Coverage](https://codeclimate.com/github/katebeavis/takeaway-challenge/badges/coverage.svg)](https://codeclimate.com/github/katebeavis/takeaway-challenge) [![Build Status](https://travis-ci.org/katebeavis/takeaway-challenge.svg?branch=master)](https://travis-ci.org/katebeavis/takeaway-challenge)
 Takeaway Challenge
 ==================
 
