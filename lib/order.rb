@@ -1,7 +1,4 @@
-require './lib/menu'
-
 class Order
-
   DEFAULT_MAXIMUM = 10
 
   attr_accessor :orders, :count, :total
@@ -17,7 +14,7 @@ class Order
     @maximum_order ||= DEFAULT_MAXIMUM
   end
 
-  def add_cereal(dish, amount)
+  def add_dish(dish, amount)
     @orders[dish] = amount
   end
 
@@ -26,21 +23,12 @@ class Order
   end
 
   def item_count
-    orders.each {|dish, amount| @count += amount}
+    orders.each { |dish, amount| @count += amount }
     @count
   end
 
   def order_total
-    orders.each {|dish, amount| @total += (dish.price * amount)}
-    @total #this seems to have a bug where it keeps adding everytime
-    #you call it
+    orders.each { |dish, amount| @total += (dish.price * amount) }
+    @total
   end
-  
 end
-
-
-
-
-
-
-
