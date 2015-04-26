@@ -15,7 +15,10 @@ describe Checkout do
   end
 
   it 'raises an error if the money doesn\'t match the total' do
-    subject.money_paid(2.50)
-    expect { subject.pay_money(order1) }.to raise_error(RuntimeError, 'You have entered an incorrect amount, please reenter')
+    expect { subject.pay_money(order1, 2) }.to raise_error(RuntimeError, 'You have entered an incorrect amount, please reenter')
+  end
+
+  it 'tells the customer a text has been sent if the money matches the total' do
+    subject.pay_money(order1, 2.50)
   end
 end

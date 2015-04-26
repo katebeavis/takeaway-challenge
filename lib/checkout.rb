@@ -2,14 +2,12 @@ require 'rubygems'
 require 'twilio-ruby'
 
 class Checkout
-  def money_paid(money)
-    @money = money
-  end
-
-  def pay_money(order)
-    fail 'You have entered an incorrect amount, please reenter' if @money != @total
-    puts 'Thanks for your order! A text has been sent with your estimated delivery time.'
-    send_message
+  def pay_money(order, money_paid)
+    if money_paid != order.order_total
+      fail 'You have entered an incorrect amount, please reenter'
+    else
+      send_message
+    end
   end
 
   def delivery_time
