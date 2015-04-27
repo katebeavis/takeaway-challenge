@@ -1,6 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/katebeavis/takeaway-challenge/badges/gpa.svg)](https://codeclimate.com/github/katebeavis/takeaway-challenge) [![Test Coverage](https://codeclimate.com/github/katebeavis/takeaway-challenge/badges/coverage.svg)](https://codeclimate.com/github/katebeavis/takeaway-challenge) [![Build Status](https://travis-ci.org/Dinnr-Makers/Dinnr.svg?branch=master)](https://travis-ci.org/Dinnr-Makers/Dinnr)
 # Takeaway Challenge
-----------------------
+
 The Airport challenge was the second weekend challenge at Makers Academy.
 -----
 We were briefed that we had to create a takeaway program with the following functionality:
