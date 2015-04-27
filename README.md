@@ -1,28 +1,33 @@
 [![Code Climate](https://codeclimate.com/github/katebeavis/takeaway-challenge/badges/gpa.svg)](https://codeclimate.com/github/katebeavis/takeaway-challenge) [![Test Coverage](https://codeclimate.com/github/katebeavis/takeaway-challenge/badges/coverage.svg)](https://codeclimate.com/github/katebeavis/takeaway-challenge) [![Build Status](https://travis-ci.org/Dinnr-Makers/Dinnr.svg?branch=master)](https://travis-ci.org/Dinnr-Makers/Dinnr)
-Takeaway Challenge
-==================
+# Takeaway Challenge
 
-Instructions
--------
-* Challenge time: Friday, the entire day + the weekend if you need it
-* Feel free to use google, your notes, books, etc but work on your own
-* You must submit a pull request to this repo with your challenge solution by 9am Monday morning
+The Airport challenge was the second weekend challenge at Makers Academy.
 
-Task
------
+We were briefed that we had to create a takeaway program with the following functionality:
+- list of dishes with prices
+- The ability to place an order by giving a list of dishes, their quantities and a number that should be the exact total.
+- If the number given does not match the total the method should raise an error, otherwise the customer is sent a text saying that the order was placed successfully and that it will be delivered 1 hour from now.
+- Text sending functionality implemented using Twilio API.
 
-* Fork this repo
-* Write a Takeaway program. 
-* Implement the following functionality:
-  * list of dishes with prices
-  * placing the order by giving the list of dishes, their quantities and a number that should be the exact total. If the sum is not correct the method should raise an error, otherwise the customer is sent a text saying that the order was placed successfully and that it will be delivered 1 hour from now, e.g. "Thank you! Your order was placed and will be delivered before 18:52".
-  * The text sending functionality should be implemented using Twilio API. You'll need to register for it. It’s free.
-  * Use twilio-ruby gem to access the API
-  * Use a Gemfile to manage your gems
-  * Make sure that your Takeaway is thoroughly tested and that you use mocks and/or stubs, as necessary to not to send texts when your tests are run
-  * However, if your Takeaway is loaded into IRB and the order is placed, the text should actually be sent
-* A free account on Twilio will only allow you to send texts to "verified" numbers. Use your mobile phone number, don't worry about the customer's mobile phone.
-* Submit a pull request with your solution
+### Objectives
 
+To understand the single responsibilty principle and how gems can be used to add functionality to a program.
 
-**Note: We are looking for good OO design and programming! Remember the Single Responsibility and Dependency Injection/Inversion principles!**
+### Technology
+- Ruby
+- Twilio
+- Rspec
+
+### To Run
+```
+$ git clone https://github.com/katebeavis/takeaway-challenge.git
+$ cd takeway-challenge
+$ irb
+    > Dir['./lib/*.rb'].each {|file| require file }
+```
+
+### To Run Tests
+```
+$ rspec
+```
+
