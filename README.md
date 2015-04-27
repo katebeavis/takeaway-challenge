@@ -10,7 +10,7 @@ We were briefed that we had to create a takeaway program with the following func
 - Text sending functionality implemented using Twilio API.
 
 ### Objectives
---------
+========
 To understand the single responsibilty principle and how gems can be used to add functionality to a program.
 
 ### Technology
