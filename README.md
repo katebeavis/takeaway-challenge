@@ -22,6 +22,7 @@ To understand the single responsibilty principle and how gems can be used to add
 ```
 $ git clone https://github.com/katebeavis/takeaway-challenge.git
 $ cd takeway-challenge
+$ bundle install
 $ irb
     > Dir['./lib/*.rb'].each {|file| require file }
 ```
