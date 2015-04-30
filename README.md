@@ -9,16 +9,16 @@ We were briefed that we had to create a takeaway program with the following func
 - If the number given does not match the total the method should raise an error, otherwise the customer is sent a text saying that the order was placed successfully and that it will be delivered 1 hour from now.
 - Text sending functionality implemented using Twilio API.
 
-### Objectives
+## Objectives
 
 To understand the single responsibilty principle and how gems can be used to add functionality to a program.
 
-### Technology
+## Technology
 - Ruby
 - Twilio
 - Rspec
 
-### To Run
+## To Run
 ```
 $ git clone https://github.com/katebeavis/takeaway-challenge.git
 $ cd takeway-challenge
@@ -27,7 +27,7 @@ $ irb
     > Dir['./lib/*.rb'].each {|file| require file }
 ```
 
-### To Run Tests
+## To Run Tests
 ```
 $ rspec
 ```
